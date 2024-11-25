@@ -54,9 +54,9 @@ def main():
     
     # Output the prediction result
     if prediction < 0.5:
-        st.write("The tumor is **Benign**.")
+        st.markdown("The tumor is **Benign**.")
     else:
-        st.write("The tumor is **Malignant**.")
+        st.markdown("The tumor is **Malignant**.")
         
     # Optional: Displaying the prediction probability
     st.write(f"Prediction Probability: {prediction[0][0]:.2f}")
